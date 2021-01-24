@@ -5,6 +5,7 @@
   <!--cartlist items -->
     <div class="trending-wrapper">
     	<h4>Result for Products</h4>
+      <a class="btn btn-success" href="ordernow">Order Now</a> <br><br>
     	@foreach($products as $item)
     	<div class="row searched-item cart-list-divider">
 
@@ -35,6 +36,7 @@
       </div>	
       @endforeach
     </div>
+    <a class="btn btn-success" href="ordernow">Order Now</a> <br><br>
 
   </div>
 
