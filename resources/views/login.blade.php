@@ -23,4 +23,8 @@
 		</div>
 	</div>
 </div>
+
+<div class="login-register">
+	<p>Not a user? Register <a href="/register">here</a> </p>
+</div>
 @endsection
