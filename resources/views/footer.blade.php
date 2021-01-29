@@ -1,16 +1,46 @@
-<!-- 
-<div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+
+<div style="clear:both" class="panel panel-default">
+  <div class="panel-body">
+    Panel content
+    <!--
+    <div class="social">
+		<a href="#"><i class="icon ion-social-instagram"></i></a>
+		<a href="#"><i class="icon ion-social-twitter"></i></a>
+		<a href="#"><i class="icon ion-social-facebook"></i></a>
+	</div>
+	-->
+    <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Home</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+				<li class="list-inline-item"><a href="/myorders">Orders</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Policy</a></li>
+    </ul>
+</div>
+
+
+<!--
+<div class="panel panel-default">
+	<div class="social">
+		<a href="#"><i class="icon ion-social-instagram"></i></a>
+		<a href="#"><i class="icon ion-social-twitter"></i></a>
+		<a href="#"><i class="icon ion-social-facebook"></i></a>
+	</div>
+
 
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="/">Home</a></li>
                 <li class="list-inline-item"><a href="#">About</a></li>
+				<li class="list-inline-item"><a href="/myorders">Orders</a></li>
                 <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Policy</a></li>
             </ul>
-  </div>
+</div>
 -->
-<div class="panel-footer">
+
+
+
+<!--
 <footer class="container-fluid bg-grey py-5">
 <div class="container">
    <div class="row">
@@ -80,8 +110,7 @@
    </div>
 </div>
 </footer>
-
-</div>
+-->
 
 <!-- Copyright -->
   <div class="panel-footer">E-Comm ©2021</div>
