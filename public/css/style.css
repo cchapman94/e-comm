@@ -33,6 +33,9 @@ img.slider-img {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 }
+.panel-body {
+	text-align: center;
+}
 
 .panel-footer {
 	text-align: center;
