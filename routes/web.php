@@ -39,3 +39,5 @@ Route::post("orderplace", [ProductController::class, 'orderPlace']);
 Route::get("myorders", [ProductController::class, 'myOrders']);
 Route::view('/about', 'about');
 Route::view('/terms', 'terms');
+Route::view('/policy', 'policy');
+
