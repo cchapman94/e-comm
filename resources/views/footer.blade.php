@@ -13,7 +13,7 @@
                 <li class="list-inline-item"><a href="/">Home</a></li>
                 <li class="list-inline-item"><a href="/about">About</a></li>
 				<li class="list-inline-item"><a href="/myorders">Orders</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="/terms">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Policy</a></li>
     </ul>
 </div>
