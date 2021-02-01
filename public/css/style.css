@@ -88,6 +88,14 @@ img.slider-img {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 }
+
+.about-container {
+    padding: 50px;
+    text-align: center;
+}
+
+
+/* ---- Footer ---- */
 .panel-body {
 	text-align: center;
 }
@@ -96,7 +104,24 @@ img.slider-img {
 	text-align: center;
 }
 
-.about-container {
-	padding: 50px;
-	text-align: center;
+.panel-body .social {
+    text-align: center;
+    padding-bottom: 25px;
 }
+
+.panel-body .social > a {
+  height:40px;
+  width:40px;
+  font-size:24px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+
+
