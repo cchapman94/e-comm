@@ -44,7 +44,14 @@
 
 }
 
-
+/* ------ Register Page -----> */
+.register {
+    color: purple;
+    font-size: 23px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center;  
+}
 
 
 
