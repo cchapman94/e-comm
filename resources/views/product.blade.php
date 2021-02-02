@@ -44,7 +44,7 @@
 	<div class="trending-item">
 	  <a href="detail/{{$item['id']}}">
       <img class="trending-img" src="{{$item['gallery']}}" alt="product images">
-      <div class="">
+      <div class="trend">
         <h3>{{$item['name']}}</h3>
       </div>
   	  </a>

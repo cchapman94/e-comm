@@ -96,8 +96,6 @@ img.slider-img {
 
 
 /* ---- Footer ---- */
-
-
 .panel-footer {
     color: #aaa;
     font-size: 13px;
@@ -148,3 +146,8 @@ img.slider-img {
 
 
 
+.trend .h3 {
+    color: inherit;
+    opacity: 0.8;
+    text-decoration: none;
+}
