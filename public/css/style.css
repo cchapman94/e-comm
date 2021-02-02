@@ -96,11 +96,11 @@ img.slider-img {
 
 
 /* ---- Footer ---- */
-.panel-body {
-	text-align: center;
-}
+
 
 .panel-footer {
+    color: #aaa;
+    font-size: 13px;
 	text-align: center;
 }
 
@@ -121,6 +121,29 @@ img.slider-img {
   margin:0 8px;
   color:inherit;
   opacity:0.75;
+}
+
+.panel-body .social > a:hover {
+    opacity: 0.9;
+}
+
+.panel-body ul {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 0;
+    padding-top: 0;
+
+}
+
+.panel-body ul a {
+    color: inherit;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.panel-body ul a:hover {
+    opacity: 1;
 }
 
 
