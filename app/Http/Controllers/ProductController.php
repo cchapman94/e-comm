@@ -44,6 +44,22 @@ class ProductController extends Controller
     	}
     	
     }
+
+    //Buy Now button on detail page: want add item to cart and redirect to ordernow page
+     function buyNow(Request $req) {
+        if($req->session()->has('user')) {
+            $cart= new Cart;
+            $cart->user_id= $req->session()->get('user')['id'];
+            $cart->product_id= $req->product_id;
+            $cart->save();
+            return redirect('/ordernow');
+
+        } else {
+            return redirect('/login');
+        }
+        
+}
+
     static function cartItem() {
     	$userId= Session::get('user')['id'];
     	return Cart::where('user_id', $userId)->count();

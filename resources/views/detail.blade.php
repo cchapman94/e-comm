@@ -35,23 +35,16 @@
       <form action="/add_to_cart" method="POST">
         @csrf
         <input type="hidden" name="product_id" value={{$product['id']}}>
-      <button class="btn btn-light"><i class="fas fa-shopping-cart pr-2"></i> Add to Cart</button>
-
-      <!-- <button type="button" class="btn btn-light btn-md mr-1 mb-2"><i
-                class="fas fa-shopping-cart pr-2"></i> Add to Cart</button> -->
-       
+        <button class="btn btn-light"><i class="fas fa-shopping-cart pr-2"></i> Add to Cart</button>       
       </form>
 
-      <button class="btn btn-primary">Buy Now</button>            
-
-      <!-- <button type="button" class="btn btn-primary btn-md mr-1 mb-2">Buy Now</button> -->
-
       
-
-
- 
-
-
+      <!-- want buy now to add product to cart and redirect to order now page -->
+      <form action="/buy_now" method="POST">
+        @csrf
+        <input type="hidden" name="product_id" value={{$product['id']}}>
+        <button class="btn btn-primary">Buy Now</button>   
+      </form>
 
 
     </div>
