@@ -159,6 +159,47 @@ img.slider-img {
 }
 
 
+/* -----Details Page----- */
 .container button {
     margin: 10px;
 }
+
+.container .title {
+    font-family: 'Helvetica Neue';
+    color: inherit;
+
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+.container .category {
+    font-family: 'Roboto', sans-serif; 
+    color: inherit;
+    font-weight: 300;
+    font-size: 17px;
+
+}
+
+.container .price {
+    font-family: 'Helvetica Neue';
+    color: inherit;
+    font-size: 23px;
+    font-weight: 600;
+
+}
+
+.container .details {
+    color: inherit;
+    /* font-family: 'Font Awesome 5 Free';*/
+ font-family: 'Roboto', sans-serif; 
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+
+
+
+
