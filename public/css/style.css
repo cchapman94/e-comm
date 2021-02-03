@@ -77,7 +77,13 @@ img.slider-img {
 	margin: 30px;
 }
 .detail-img {
-	height: 200px;
+	height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+
+
 }
 .search-box {
 	width: 500px !important;
@@ -150,4 +156,9 @@ img.slider-img {
     color: inherit;
     opacity: 0.8;
     text-decoration: none;
+}
+
+
+.container button {
+    margin: 10px;
 }
