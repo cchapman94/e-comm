@@ -171,6 +171,7 @@ img.slider-img {
 */
 
 
+
 /* -----Details Page----- */
 .container button {
     margin: 10px;
@@ -245,10 +246,32 @@ img.slider-img {
 }
 
 /* ----- Cartlist page -----> */
-.custom-product .name {
+
+.custom-product .cartName {
     font-family: 'Roboto';
     color: inherit;
 
     font-size: 30px;
     font-weight: 500;
+}
+
+
+.custom-product .description {
+    color: inherit;
+     font-family: 'Roboto', sans-serif; 
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+.custom-product .price {
+    color: inherit;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 18px;
+
+} 
+
+.rmvCart a {
+    margin-top:  50px;
 }

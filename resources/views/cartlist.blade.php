@@ -41,18 +41,21 @@ if(Session::has('user'))
         <!-- Display only product name & description -->
         <div class="col-sm-4">
             <div class="">
-              <h2 class="name">{{$item->name}}</h2>
-              <h5>{{$item->description}}</h5>
-              <h5>${{$item->price}}</h5>
+              <h2 class="cartName">{{$item->name}}</h2>
+              <h5 class="description">{{$item->description}}</h5>
+              <h5 class="price">${{$item->price}}</h5>
              
             </div>
         </div>
 
         <!--Display remove from cart -->
         <div class="col-sm-3">
+          <div class="rmvCart">
 
           
-          <a href="/removecart/{{$item->cart_id}}" class="btn btn-warning">Remove from Cart</a>
+          <a href="/removecart/{{$item->cart_id}}" class="btn btn-warning"><i class="fas fa-trash-alt"></i> Remove from Cart</a>
+        </div>
+
 
           <!-- not functional yet -->
           <!-- 
