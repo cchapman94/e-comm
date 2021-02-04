@@ -243,3 +243,12 @@ img.slider-img {
 .trending-item a:hover{
     text-decoration: none;
 }
+
+/* ----- Cartlist page -----> */
+.custom-product .name {
+    font-family: 'Roboto';
+    color: inherit;
+
+    font-size: 30px;
+    font-weight: 500;
+}
