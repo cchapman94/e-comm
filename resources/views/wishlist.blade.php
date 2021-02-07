@@ -46,13 +46,15 @@ if(Session::has('user'))
             </div>
         </div>
 
-        <!--Display remove from cart -->
-        <div class="col-sm-3">
-          <div class="rmvCart">
 
-          
-          <a href="/removecart/{{$item->cart_id}}" class="btn btn-warning"><i class="fas fa-trash-alt"></i> Remove from Cart</a>
-        </div>
+
+        <div class="col-sm-3">
+
+        <!-- Display add to cart -->
+        <button class="btn btn-primary">Add to Cart</button>
+        
+        <!--Display remove from cart -->
+          <button class="btn btn-warning">Remove from Wishlist</button>
         
         </div>
 

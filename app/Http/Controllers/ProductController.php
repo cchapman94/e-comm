@@ -141,16 +141,15 @@ class ProductController extends Controller
     }
     
      function wishList() {
-        /*
-        //join cart and products tables from the db
+        //join list and products tables from the db
         $userId= Session::get('user')['id'];
-        $products= DB::table('cart')
-        ->join('products', 'cart.product_id', '=', 'products.id')
-        ->where('cart.user_id', $userId)
-        ->select('products.*', 'cart.id as cart_id')
+        $products= DB::table('list')
+        ->join('products', 'list.product_id', '=', 'products.id')
+        ->where('list.user_id', $userId)
+        ->select('products.*', 'list.id as list_id')
         ->get();
 
-        return view('wishlist', ['products'=>$products]); */
+        return view('wishlist', ['products'=>$products]); 
     }
    
 }
