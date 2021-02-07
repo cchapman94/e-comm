@@ -46,21 +46,6 @@ class ProductController extends Controller
     	
     }
 
-     function addToWishlist(Request $req) {
-        if($req->session()->has('user')) {
-            $list= new Wishlist;
-            $list->user_id= $req->session()->get('user')['id'];
-            $list->product_id= $req->product_id;
-            $list->save();
-            return redirect('/');
-
-        } else {
-            return redirect('/login');
-        } 
-        
-        
-    }
-
     //Buy Now button on detail page: want add item to cart and redirect to ordernow page
      function buyNow(Request $req) {
         if($req->session()->has('user')) {
@@ -92,18 +77,7 @@ class ProductController extends Controller
 
     	return view('cartlist', ['products'=>$products]);
     }
-/*
-     function wishList() {
-        //join cart and products tables from the db
-        $userId= Session::get('user')['id'];
-        $products= DB::table('cart')
-        ->join('products', 'cart.product_id', '=', 'products.id')
-        ->where('cart.user_id', $userId)
-        ->select('products.*', 'cart.id as cart_id')
-        ->get();
 
-        return view('wishlist', ['products'=>$products]);
-    }*/
     function removeCart($id) {
     	Cart::destroy($id);
     	return redirect('cartlist');
@@ -145,6 +119,38 @@ class ProductController extends Controller
     	->get();
 
     	return view('myorders', ['orders'=>$orders]);
+    }
+    function addToWishlist(Request $req) {
+        if($req->session()->has('user')) {
+            $list= new Wishlist;
+            $list->user_id= $req->session()->get('user')['id'];
+            $list->product_id= $req->product_id;
+            $list->save();
+            return redirect('/');
+
+        } else {
+            return redirect('/login');
+        } 
+        
+        
+    }
+    static function wishlistItem() {
+        $userId= Session::get('user')['id'];
+        return Wishlist::where('user_id', $userId)->count();
+
+    }
+    
+     function wishList() {
+        /*
+        //join cart and products tables from the db
+        $userId= Session::get('user')['id'];
+        $products= DB::table('cart')
+        ->join('products', 'cart.product_id', '=', 'products.id')
+        ->where('cart.user_id', $userId)
+        ->select('products.*', 'cart.id as cart_id')
+        ->get();
+
+        return view('wishlist', ['products'=>$products]); */
     }
    
 }

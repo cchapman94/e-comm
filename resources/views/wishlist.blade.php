@@ -1,6 +1,17 @@
 @extends('master')
 @section("content")
 
+<?php 
+use App\Http\Controllers\ProductController;
+//Check if user is logged in 
+$total=0;
+if(Session::has('user'))
+{
+  $total= ProductController::wishlistItem();
+}
+
+?>
+
 
 <div class="jumbotron color-grey-light mt-70">
       <div class="d-flex align-items-center h-100">
@@ -14,6 +25,7 @@
   <div class="col-sm-10">
   <!--cartlist items -->
     <div class="trending-wrapper">
+      <h4>Wishlist - {{$total}} items </h4>
     	@foreach($products as $item)
     	<div class="row searched-item cart-list-divider">
 
