@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Cart;
 use App\Models\Order;
+use App\Models\Wishlist;
 use Session;
 use Illuminate\Support\Facades\DB;
 
@@ -47,15 +48,16 @@ class ProductController extends Controller
 
      function addToWishlist(Request $req) {
         if($req->session()->has('user')) {
-            $cart= new Cart;
-            $cart->user_id= $req->session()->get('user')['id'];
-            $cart->product_id= $req->product_id;
-            $cart->save();
+            $list= new Wishlist;
+            $list->user_id= $req->session()->get('user')['id'];
+            $list->product_id= $req->product_id;
+            $list->save();
             return redirect('/');
 
         } else {
             return redirect('/login');
-        }
+        } 
+        
         
     }
 
@@ -90,7 +92,7 @@ class ProductController extends Controller
 
     	return view('cartlist', ['products'=>$products]);
     }
-
+/*
      function wishList() {
         //join cart and products tables from the db
         $userId= Session::get('user')['id'];
@@ -101,7 +103,7 @@ class ProductController extends Controller
         ->get();
 
         return view('wishlist', ['products'=>$products]);
-    }
+    }*/
     function removeCart($id) {
     	Cart::destroy($id);
     	return redirect('cartlist');

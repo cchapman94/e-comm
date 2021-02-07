@@ -44,6 +44,13 @@
         <button class="btn btn-primary">Buy Now</button>   
       </form>
 
+      <!--wishlist -->
+      <form action="/add_to_wishlist" method="POST">
+        @csrf
+        <input type="hidden" name="product_id" value={{$product['id']}}>
+        <button class="btn btn-light"></i> Add to Wishlist</button>       
+      </form>
+
     </div>
 
   </div>
