@@ -151,5 +151,10 @@ class ProductController extends Controller
 
         return view('wishlist', ['products'=>$products]); 
     }
+
+    function removeList($id) {
+        Wishlist::destroy($id);
+        return redirect('wishlist');
+    } 
    
 }

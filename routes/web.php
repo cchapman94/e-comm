@@ -37,6 +37,8 @@ Route::post("buy_now", [ProductController::class, 'buyNow']);
 Route::get("cartlist", [ProductController::class, 'cartList']);
 Route::get("wishlist", [ProductController::class, 'wishList']);
 Route::get("removecart/{id}", [ProductController::class, 'removeCart']);
+Route::get("removelist/{id}", [ProductController::class, 'removeList']);
+
 Route::get("ordernow", [ProductController::class, 'orderNow']);
 Route::post("orderplace", [ProductController::class, 'orderPlace']);
 Route::get("myorders", [ProductController::class, 'myOrders']);

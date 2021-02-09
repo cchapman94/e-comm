@@ -51,10 +51,12 @@ if(Session::has('user'))
         <div class="col-sm-3">
 
         <!-- Display add to cart -->
+        <!--
         <button class="btn btn-primary">Add to Cart</button>
+-->
         
         <!--Display remove from cart -->
-          <button class="btn btn-warning">Remove from Wishlist</button>
+          <a href="/removelist/{{$item->list_id}}" class="btn btn-warning">Remove from Wishlist</a>
         
         </div>
 
