@@ -58,37 +58,16 @@ if(Session::has('user'))
 
 
           <!-- not functional yet -->
-          <!-- 
-          <br><br>
-          <a class="btn btn-primary" href="#">Move to wishlist</a> <br><br>
-        -->
+          <!-- <a class="btn btn-primary" href="#">Move to wishlist</a> <br><br> -->
 
-        
-        </div>
-
-        
+       
+        </div>        
 
       </div>	
 
       @endforeach
     
     <a class="btn btn-success" href="ordernow">Order Now</a> <br><br>
-
-<!--
-    <div class="col-sm-4">
-      <h2>Summary</h2>
-      <h3>Products </h3>
-      <h3>Tax </h3>
-      <h3>Shipping </h3>
-      <h3>Total amount </h3>
-      <a class="btn btn-primary" href="ordernow">Go to checkout</a>
-
-
-    </div>
-
--->
-
-
 
     </div>
 
