@@ -34,21 +34,21 @@
       <form action="/add_to_cart" method="POST">
         @csrf
         <input type="hidden" name="product_id" value={{$product['id']}}>
-        <button class="btn btn-light"><i class="fas fa-shopping-cart pr-2"></i> Add to Cart</button>       
+        <button class="btn btn-primary"><i class="fas fa-shopping-cart pr-2"></i> Add to Cart</button>       
       </form>
      
       <!-- want buy now to add product to cart and redirect to order now page -->
       <form action="/buy_now" method="POST">
         @csrf
         <input type="hidden" name="product_id" value={{$product['id']}}>
-        <button class="btn btn-primary">Buy Now</button>   
+        <button class="btn btn-success">Buy Now</button>  
       </form>
 
       <!--wishlist -->
       <form action="/add_to_wishlist" method="POST">
         @csrf
         <input type="hidden" name="product_id" value={{$product['id']}}>
-        <button class="btn btn-light"></i> Add to Wishlist</button>       
+        <button class="btn btn-link"><i class="fas fa-heart"></i> Add to Wish List</button>       
       </form>
 
     </div>
