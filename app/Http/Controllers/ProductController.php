@@ -66,7 +66,8 @@ class ProductController extends Controller
     	return Cart::where('user_id', $userId)->count();
 
     }
-    function cartList() {
+    function cartList(Request $req) {
+        if($req->session()->has('user')) {
     	//join cart and products tables from the db
     	$userId= Session::get('user')['id'];
     	$products= DB::table('cart')
@@ -76,6 +77,10 @@ class ProductController extends Controller
     	->get();
 
     	return view('cartlist', ['products'=>$products]);
+        } else {
+            return redirect('/login');
+        }
+
     }
 
     function removeCart($id) {
@@ -111,14 +116,19 @@ class ProductController extends Controller
     	return redirect('/');
 
     }
-    function myOrders() {
-    	$userId= Session::get('user')['id'];
+    function myOrders(Request $req) {
+    	if($req->session()->has('user')) {
+        $userId= Session::get('user')['id'];
     	$orders= DB::table('orders')
     	->join('products', 'orders.product_id', '=', 'products.id')
     	->where('orders.user_id', $userId)
     	->get();
 
     	return view('myorders', ['orders'=>$orders]);
+        } else {
+            return redirect('/login');
+        }
+
     }
     function addToWishlist(Request $req) {
         if($req->session()->has('user')) {
@@ -140,7 +150,9 @@ class ProductController extends Controller
 
     }
     
-     function wishList() {
+     function wishList(Request $req) {
+        if($req->session()->has('user')) {
+
         //join list and products tables from the db
         $userId= Session::get('user')['id'];
         $products= DB::table('list')
@@ -150,7 +162,13 @@ class ProductController extends Controller
         ->get();
 
         return view('wishlist', ['products'=>$products]); 
+        } else {
+            return redirect('/login');
+        }
+
     }
+
+
 
     function removeList($id) {
         Wishlist::destroy($id);
