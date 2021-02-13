@@ -1,5 +1,7 @@
 @extends('master')
 @section("content")
+
+
 <!--
 <div class="custom-product">
   <div class="col-sm-10">
@@ -51,10 +53,8 @@
 
 <h1>[work in progress]</h1>
 
-
 <div class="container">
    <div class="row">
-
           <!-- -----Cartlist summary----- -->
           <div class="col-md-4 order-md-2 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -166,6 +166,7 @@
           </div>
         </div>
 
+
         <!-- ----- Payment types----- -->
         <hr class="mb-4">
         <div class="d-block my-3">
@@ -190,12 +191,12 @@
         </div>
       </div>
       <hr class="mb-4">
-
             
       <button type="submit" class="btn btn-default btn-lg btn-block">Order Now</button>
       </form>
 
     </div>
+
 
   </div>
 
