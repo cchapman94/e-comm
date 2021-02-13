@@ -21,7 +21,6 @@ class ProductController extends Controller
 
     }
     function detail($id) {
-    	//return Product::find($id);
     	$data= Product::find($id);
     	return view('detail', ['product'=>$data]);
 
@@ -87,7 +86,7 @@ class ProductController extends Controller
     	Cart::destroy($id);
     	return redirect('cartlist');
     }
-    function orderNow() {
+    static function orderNow() {
     	$userId= Session::get('user')['id'];
     	$total= $products= DB::table('cart')
     	->join('products', 'cart.product_id', '=', 'products.id')

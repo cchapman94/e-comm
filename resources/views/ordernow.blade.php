@@ -61,14 +61,19 @@
               <span class="text-muted">Your cart</span>
               <span class="badge badge-secondary badge-pill">3</span>
             </h4>
+
+
             <ul class="list-group mb-3">
               <li class="list-group-item d-flex justify-content-between lh-condensed">
                 <div>
                   <h6 class="my-0">Product name</h6>
                   <small class="text-muted">Brief description</small>
                 </div>
-                <span class="text-muted">$12</span>
+                <span class="text-muted">${{$total}}</span>
+
               </li>
+
+<!--
               <li class="list-group-item d-flex justify-content-between lh-condensed">
                 <div>
                   <h6 class="my-0">Second product</h6>
@@ -76,6 +81,8 @@
                 </div>
                 <span class="text-muted">$8</span>
               </li>
+
+
               <li class="list-group-item d-flex justify-content-between lh-condensed">
                 <div>
                   <h6 class="my-0">Third item</h6>
@@ -83,10 +90,23 @@
                 </div>
                 <span class="text-muted">$5</span>
               </li>
-             
+
+ -->           
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Tax (USD)</span>
+                <strong>$0</strong>
+              </li>
+
+
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Delivery (USD)</span>
+                <strong>$10</strong>
+              </li>
+
+
               <li class="list-group-item d-flex justify-content-between">
                 <span>Total (USD)</span>
-                <strong>$20</strong>
+                <strong>${{$total + 10}}</strong>
               </li>
             </ul>
 
