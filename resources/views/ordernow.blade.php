@@ -73,7 +73,6 @@ if(Session::has('user'))
               <span class="badge badge-secondary badge-pill">{{$amount}}</span>
             </h4>
 
-
             <ul class="list-group mb-3">
               <li class="list-group-item d-flex justify-content-between lh-condensed">
                 <div>
@@ -121,7 +120,6 @@ if(Session::has('user'))
               </li>
             </ul>
 
-           
 
           </div>
     
@@ -130,6 +128,7 @@ if(Session::has('user'))
       <form action="/orderplace" method="POST">
       @csrf
       <!-- -----Name, Email, Address----- -->
+      <!--
         <div class="row">
         <h4 class="mb-3">Billing address</h4>
             <div class="mb-3">  
@@ -145,7 +144,7 @@ if(Session::has('user'))
               <textarea name="email" placeholder="you@example.com" class="form-control"></textarea>           
             </div>
           </div>
-
+      -->
           <div class="mb-3">
             <label for="address">Address</label>
             <div class="form-group">
@@ -154,6 +153,7 @@ if(Session::has('user'))
           </div>
                
         <!-- -----Country, State, Zip----- -->
+        <!--
         <div class="row">
           <div class="col-md-5 mb-3">
             <label for="country">Country</label>
@@ -176,7 +176,7 @@ if(Session::has('user'))
             </div>
           </div>
         </div>
-
+        -->
 
         <!-- ----- Payment types----- -->
         <hr class="mb-4">
@@ -203,7 +203,7 @@ if(Session::has('user'))
       </div>
       <hr class="mb-4">
             
-      <button type="submit" class="btn btn-default btn-lg btn-block">Order Now</button>
+      <button type="submit" class="btn btn-primary btn-lg btn-block">Order Now</button>
       </form>
 
     </div>
