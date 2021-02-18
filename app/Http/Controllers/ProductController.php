@@ -107,6 +107,11 @@ class ProductController extends Controller
     		$order->payment_method= $req->payment;
     		$order->payment_status= "pending";
     		$order->address= $req->address;
+            $order->country= $req->country;
+            $order->state= $req->state;
+            $order->zip= $req->zip;
+
+
     		$order->save();
     		Cart::where('user_id', $userId)->delete();
 
