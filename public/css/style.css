@@ -278,3 +278,27 @@ img.slider-img {
 .rmvCart a {
     margin-top:  50px;
 }
+
+.cartlist-summary-details{
+   /* d-flex justify-content-between align-items-center mb-3 */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 3;
+}
+
+.list-group-item {
+    /* d-flex justify-content-between lh-condensed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.list-group-item strong {
+    display: flex;
+    float: right;
+
+}
+

@@ -1,10 +1,17 @@
 @extends('master')
 @section("content")
+<div class="jumbotron color-grey-light mt-70">
+  <div class="d-flex align-items-center h-100">
+    <div class="container text-center py-5">
+      <h3 class="mb-0">My Orders</h3>
+    </div>
+  </div>
+</div>
+
 <div class="custom-product">
-  <div class="col-sm-10">
+<div class="col-sm-10">
   <!--myorders items -->
     <div class="trending-wrapper">
-    	<h4>My Orders</h4>
     	@foreach($orders as $item)
     	<div class="row searched-item cart-list-divider">
 

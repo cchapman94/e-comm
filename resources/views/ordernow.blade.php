@@ -60,65 +60,54 @@ if(Session::has('user'))
 </div>
 
 -->
-
-
-<h1>[work in progress]</h1>
+<div class="jumbotron color-grey-light mt-70">
+  <div class="d-flex align-items-center h-100">
+    <div class="container text-center py-5">
+      <h3 class="mb-0">Checkout</h3>
+    </div>
+  </div>
+</div>
 
 <div class="container">
    <div class="row">
           <!-- -----Cartlist summary----- -->
-          <div class="col-md-4 order-md-2 mb-4">
-            <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <div class="col-md-4 order-md-2 mb-4"> 
+            <!-- <h4 class="d-flex justify-content-between align-items-center mb-3"> -->
+              <h4 class="cartlist-summary-details">
               <span class="text-muted">Your cart</span>
               <span class="badge badge-secondary badge-pill">{{$amount}}</span>
             </h4>
 
             <ul class="list-group mb-3">
               
-              <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <!-- <li class="list-group-item d-flex justify-content-between lh-condensed"> -->
+                <li class="list-group-item">
                 <!--
                 <div>
                   <h6 class="my-0">Product name</h6>
                   <small class="text-muted">Brief description</small>
                 </div>
               -->
-                <span class="text-muted">Items ({{$amount}}): ${{$total}}</span>
+              
+                <span>Items ({{$amount}}): </span>            
+                <strong> ${{$total}} </strong>
 
               </li>
 
-
-<!--
-              <li class="list-group-item d-flex justify-content-between lh-condensed">
-                <div>
-                  <h6 class="my-0">Second product</h6>
-                  <small class="text-muted">Brief description</small>
-                </div>
-                <span class="text-muted">$8</span>
-              </li>
-
-
-              <li class="list-group-item d-flex justify-content-between lh-condensed">
-                <div>
-                  <h6 class="my-0">Third item</h6>
-                  <small class="text-muted">Brief description</small>
-                </div>
-                <span class="text-muted">$5</span>
-              </li>
-
- -->           
-              <li class="list-group-item d-flex justify-content-between">
+         
+              <li class="list-group-item">
                 <span>Tax (USD):</span>
                 <strong>$0</strong>
               </li>
 
 
-              <li class="list-group-item d-flex justify-content-between">
+              <li class="list-group-item">
                 <span>Delivery (USD):</span>
                 <strong>$10</strong>
               </li>
 
 
-              <li class="list-group-item d-flex justify-content-between">
+              <li class="list-group-item">
                 <span>Order total (USD):</span>
                 <strong>${{$total + 10}}</strong>
               </li>
@@ -205,6 +194,11 @@ if(Session::has('user'))
 
         </div>
       </div>
+
+
+
+
+
       <hr class="mb-4">
             
       <button type="submit" class="btn btn-primary btn-lg btn-block">Order Now</button>
