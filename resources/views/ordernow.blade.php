@@ -74,14 +74,18 @@ if(Session::has('user'))
             </h4>
 
             <ul class="list-group mb-3">
+              
               <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <!--
                 <div>
                   <h6 class="my-0">Product name</h6>
                   <small class="text-muted">Brief description</small>
                 </div>
-                <span class="text-muted">${{$total}}</span>
+              -->
+                <span class="text-muted">Items ({{$amount}}): ${{$total}}</span>
 
               </li>
+
 
 <!--
               <li class="list-group-item d-flex justify-content-between lh-condensed">
@@ -103,19 +107,19 @@ if(Session::has('user'))
 
  -->           
               <li class="list-group-item d-flex justify-content-between">
-                <span>Tax (USD)</span>
+                <span>Tax (USD):</span>
                 <strong>$0</strong>
               </li>
 
 
               <li class="list-group-item d-flex justify-content-between">
-                <span>Delivery (USD)</span>
+                <span>Delivery (USD):</span>
                 <strong>$10</strong>
               </li>
 
 
               <li class="list-group-item d-flex justify-content-between">
-                <span>Total (USD)</span>
+                <span>Order total (USD):</span>
                 <strong>${{$total + 10}}</strong>
               </li>
             </ul>
@@ -153,7 +157,7 @@ if(Session::has('user'))
           </div>
                
         <!-- -----Country, State, Zip----- -->
-        <!--
+        
         <div class="row">
           <div class="col-md-5 mb-3">
             <label for="country">Country</label>
@@ -176,7 +180,7 @@ if(Session::has('user'))
             </div>
           </div>
         </div>
-        -->
+       
 
         <!-- ----- Payment types----- -->
         <hr class="mb-4">
