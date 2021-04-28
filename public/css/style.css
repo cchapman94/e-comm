@@ -72,8 +72,8 @@ img.slider-img {
 
 
 .trending-img {
-	height: 125px;
-    width: 125px;
+	height: 125px; 
+    width: 125px; 
     border-radius: 15px;
     box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
 
@@ -300,5 +300,29 @@ img.slider-img {
     display: flex;
     float: right;
 
+}
+
+
+@media only screen and (max-width: 800px) {
+    .trending-img {
+        height: 250px; 
+        width: 250px; 
+        border-radius: 15px;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        
+        transition: all .2s ease;
+        vertical-align: middle;
+        
+    }
+
+
+    .trending-item {        
+        float: left;
+        width: 100%; 
+    }
+    .trending-wrapper {
+
+        margin: 100px;
+    }
 }
 
