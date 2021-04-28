@@ -39,7 +39,7 @@ class ProductSeeder extends Seeder
 	        	'gallery'=>'https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=676&q=80'
         	],
         	[
-	        	'name'=>'Beats by Dr. Dre - Powerbeats Pro Totally Wireless Earphones', 
+	        	'name'=>'Beats by Dr. Dre - Powerbeats Pro', 
 	        	'price'=>'249.99',
 	        	'description'=>'Totally wireless Powerbeats Pro earphones built to revolutionize your workouts',
 	        	'category'=>'headphones',
